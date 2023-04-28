@@ -46,13 +46,13 @@ const contentList = [
   // { type: "links", text: "", links: personalLinks },
   // { type: "break", text: "" },
   { text: "So anyways, that's a little bit about my coding experience." },
-  { text: " I also love to play and write music, and I'm a huge fan of the outdoors and climbing (bouldering specifically)." },
+  { text: " I also love to play and write music, and I'm a huge fan of the outdoors and bouldering!" },
   { type: "break", text: "" },
   { type: "break", text: "" },
   { type: "delete", text: "I hope you hire me!" },
   { text: " " },
   { type: "delete", text: "¯\\_(ツ)_/¯"},
-  { text: "Thank you for checking out my work!" },
+  { text: "Thank you for checking out my work." },
   { text: " Please reach out to me via Email or LinkedIn anytime!" },
   { type: "break", text: "" },
   { type: "element", text: "", element: <Links className="p-2 flex gap-2 w-full justify-center"/> },
@@ -85,12 +85,10 @@ const HomeWindow: FC = () => {
 
       switch (contentObj.type) {
         case "element": { 
-          delay.current = 2000
           newDisplay[contentIndex] = <div key={makeKey(contentIndex)}>{contentObj.element}</div>
           setDisplay(newDisplay)
 
           setTimeout(() => handleNextContent(), 2500)
-          
           break;
         }
         case "links": { 
@@ -136,7 +134,7 @@ const HomeWindow: FC = () => {
           break;
         };
         case "break": { 
-          delay.current = 750
+          delay.current = 100
           const el = <br key={makeKey(contentIndex)} />
           newDisplay[contentIndex] = el
           setDisplay(newDisplay)    
@@ -173,7 +171,7 @@ const HomeWindow: FC = () => {
   }, [contentIndex, textIndex])
   
   useEffect(() => {
-    if (!myDivRef.current || isSkipping) return;
+    if (!myDivRef.current || isSkipping || contentIndex >= contentList.length) return;
     // Scroll to the bottom of the div when the component updates
     myDivRef.current.scrollTop = myDivRef.current.scrollHeight;
   });

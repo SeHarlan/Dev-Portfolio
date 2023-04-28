@@ -40,7 +40,7 @@ const MBBWindow: FC = () => {
         <p>A few more basic but key features to look for are advanced search and filtering, infinite scrolling, night/day mode and graphs.</p>
         <br />
         <div className="classic-inset h-full">
-          <iframe src={link} className="w-full h-full" />
+          <iframe src={link} className="w-full h-full relative" />
           <div className="h-2"/>
         </div>
       </div>
