@@ -20,7 +20,7 @@ interface WindowProps {
   menu?: WindowMenuItem[];
   wrapperClassName?: string;
 }
-const Window: FC<WindowProps> = ({ children, initPosition, windowKey, initSize, inset = true, menu, wrapperClassName }) => {
+const Window: FC<WindowProps> = ({ children, initPosition, windowKey, initSize, inset = true, menu, wrapperClassName = "bg-windowsGray" }) => {
   const { dragRef, position, isDragging, resizeRef, containerRef, size, handleMaximize, isMax } = useDragResize(initPosition, initSize, windowKey)
   const {orderState, minimizedState, openState} = useWindowsContext()
   const [orderList, setOrderList] = orderState
@@ -143,7 +143,7 @@ const Window: FC<WindowProps> = ({ children, initPosition, windowKey, initSize, 
           "bg-white relative"
         )} 
       style={{ height: `calc(100% - ${offsetHeight}px)` }}>
-        <div className={clsx("overflow-auto h-full bg-windowsGray", wrapperClassName)}>
+        <div className={clsx("overflow-auto h-full", wrapperClassName)}>
           {children}
         </div>
       </div>

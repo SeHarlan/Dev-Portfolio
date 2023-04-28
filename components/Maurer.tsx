@@ -50,7 +50,7 @@ const Maurer: FC<{ className?: string }> = ({ className }) => {
     p.windowResized = () => {
       deboucedResize()
     };
-    p.mouseClicked = () => { 
+    p.mouseReleased = () => { 
       if (p.mouseX < 0 || p.mouseX > p.width || p.mouseY < 0 || p.mouseY > p.height) return 
       p.clear(0,0,0,0)
       counter = 0

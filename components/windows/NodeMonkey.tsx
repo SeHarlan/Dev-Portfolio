@@ -9,7 +9,7 @@ const NodeMonkeyWindow: FC = () => {
     w: 800,
   }
   const initPos = {
-    x: 100,
+    x: 160,
     y: 280
   }
 

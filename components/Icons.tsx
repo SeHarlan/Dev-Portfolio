@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ICONS, useWindowsContext, WINDOWS } from "../context/WindowsProvider";
 import { FC } from "react";
 
@@ -13,7 +14,7 @@ const Icons: FC = () => {
             className="custom-cursor select-none text-white flex flex-col items-center w-fit"
             onDoubleClick={handleClick}
           >
-            <img src={ICONS[windowKey]} alt={`${windowKey} Icon`} className="w-14 mb-1" />
+            <Image width={56} height={56} src={ICONS[windowKey]} alt={`${windowKey} Icon`} className="w-14 mb-1" />
             {windowKey}
           </div>
         )
