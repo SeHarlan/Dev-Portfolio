@@ -26,6 +26,8 @@ const NodeMonkeyWindow: FC = () => {
     },
   ]
 
+  return null
+
   return (
     <Window windowKey={WINDOWS.NODE_MONKEY} initSize={initSize} initPosition={initPos} menu={menu} wrapperClassName="bg-amber-50">
       <div className="p-2 h-full">

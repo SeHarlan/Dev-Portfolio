@@ -6,9 +6,10 @@ import Maurer from "../Maurer"
 import Links from "../Links"
 
 const web3Links = [
+  {label: "Collector", windowKey: WINDOWS.COLLECTOR},
   { label: "MBB Marketplace", windowKey: WINDOWS.MBB },
   { label: "Curate", windowKey: WINDOWS.CURATE },
-  { label: "Node Monkey", windowKey: WINDOWS.NODE_MONKEY },
+  // { label: "Node Monkey", windowKey: WINDOWS.NODE_MONKEY },
 ]
 const personalLinks = [
   {label: "Cards Against Humanity", windowKey: "HAC"}
@@ -25,10 +26,11 @@ const contentList = [
   { text: " When I'm not coding for my day job, I'm coding generative art." },
   { text: " (Click on the canvas for a new random pattern)" },
   { type: "element", text: "", element: <Maurer className="relative z-10 w-[200px] h-[200px] mx-auto cursor-pointer" /> },
-  { text: "The past few years I've been working as an indepedent contractor for various web3 startups."},
+  { text: "The past few years I've been working as an independent contractor for various web3 startups." },
+  { text: " Currently I am the co-founder and lead developer for a digital art gallery platform called Collector." },
   { type: "break", text: "" },
   { type: "break", text: "" },
-  { text: "I code most of the websites from the ground up, sometimes helping design them as well." },
+  { text: "I code most projects from the ground up, sometimes helping design them as well." },
   { text: " Always focusing on the smoothest user experience possible."},
   { text: " Then I integrate them with various blockchain sdks so users can interact with smart contracts and send transactions."},
   { type: "break", text: "" },
@@ -39,14 +41,8 @@ const contentList = [
   { text: "Before that I worked for a company called BrandLive where I coded modular, customizable website components as well as the companion editor that helped users build their own customized streaming sites." },
   { type: "break", text: "" },
   { type: "break", text: "" },
-  // { text: "In my spare time I also love to work on my own projects, mostly to learn new skills or experiment." },
-  // { type: "break", text: "" },
-  // { type: "break", text: "" },
-  // { text: "Here are two I'm really proud of: " },
-  // { type: "links", text: "", links: personalLinks },
-  // { type: "break", text: "" },
   { text: "So anyways, that's a little bit about my coding experience." },
-  { text: " I also love to play and write music, and I'm a huge fan of the outdoors and bouldering!" },
+  { text: " I also love to play and write music, and I'm a huge fan of the outdoors, making terrariums and bouldering!" },
   { type: "break", text: "" },
   { type: "break", text: "" },
   { type: "delete", text: "I hope you hire me!" },

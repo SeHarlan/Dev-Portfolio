@@ -29,22 +29,25 @@ export const useWindowsContext = () => useContext(WindowsContext)
 
 export const WINDOWS = {
   HOME: "Home",
+  COLLECTOR: "Collector",
   MBB: "MBB",
   CURATE: "Curate",
-  NODE_MONKEY: "Node Monkey",
+  // NODE_MONKEY: "Node Monkey",
 }
 
 export const ICONS = {
   [WINDOWS.HOME]: "/images/small-alt-logo.png",
+  [WINDOWS.COLLECTOR]: "/images/collector-logo.png",
   [WINDOWS.MBB]: "/images/MBB-icon.png",
   [WINDOWS.CURATE]: "/images/Curate-icon.png",
-  [WINDOWS.NODE_MONKEY]: "/images/NodeMonkey-icon.png",
+  // [WINDOWS.NODE_MONKEY]: "/images/NodeMonkey-icon.png",
 }
 
 const defaultMin = Object.values(WINDOWS).reduce((acc: {[key:string]: boolean}, curr) => {
   acc[curr] = false
   return acc
 }, {})
+
 const defaultOpen = { ...defaultMin }
 defaultOpen[WINDOWS.HOME] = true
 const defaultOrder = Object.entries(defaultOpen).filter(([key, open]) => open).map(([key, open]) => key)

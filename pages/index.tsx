@@ -6,6 +6,7 @@ import Head from 'next/head'
 import MBBWindow from '@/components/windows/MBB'
 import NodeMonkeyWindow from '@/components/windows/NodeMonkey'
 import CurateWindow from '@/components/windows/Curate'
+import CollectorWindow from '@/components/windows/Collector'
 
 export default function Home() {
   const { openState } = useWindowsContext()
@@ -32,9 +33,10 @@ export default function Home() {
         <div id="window-container" className='relative bg-windowsBG' >
           <Icons />
           {openMap[WINDOWS.HOME] ? <HomeWindow /> : null}
+          {openMap[WINDOWS.COLLECTOR] ? <CollectorWindow/> : null}
           {openMap[WINDOWS.MBB] ? <MBBWindow /> : null}
           {openMap[WINDOWS.CURATE] ? <CurateWindow /> : null }
-          {openMap[WINDOWS.NODE_MONKEY] ? <NodeMonkeyWindow /> : null}
+          {/* {openMap[WINDOWS.NODE_MONKEY] ? <NodeMonkeyWindow /> : null} */}
         </div>
         <Footer />
       </main>
