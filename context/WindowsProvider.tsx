@@ -40,7 +40,7 @@ export const ICONS = {
   [WINDOWS.COLLECTOR]: "/images/collector-logo.png",
   [WINDOWS.MBB]: "/images/MBB-icon.png",
   [WINDOWS.CURATE]: "/images/Curate-icon.png",
-  [WINDOWS.NODE_MONKEY]: "/images/NodeMonkey-icon.png",
+  // [WINDOWS.NODE_MONKEY]: "/images/NodeMonkey-icon.png",
 }
 
 const defaultMin = Object.values(WINDOWS).reduce((acc: {[key:string]: boolean}, curr) => {
