@@ -29,7 +29,7 @@ const NodeMonkeyWindow: FC = () => {
   return null
 
   return (
-    <Window windowKey={WINDOWS.NODE_MONKEY} initSize={initSize} initPosition={initPos} menu={menu} wrapperClassName="bg-amber-50">
+    <Window windowKey={""} initSize={initSize} initPosition={initPos} menu={menu} wrapperClassName="bg-amber-50">
       <div className="p-2 h-full">
         <Link className="text-lg font-bold underline" href={link} target="_blank">NodeMonkey Staking and Renting Site</Link>
         <br />
