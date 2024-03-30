@@ -33,7 +33,7 @@ const CollectorWindow: FC = () => {
         <br />
         <p>As co-founder and lead engineer, Collector has been the most challenging and most rewarding project I've ever done.</p>
         <br />
-        <p>One new and exciting experience for me was helping come up with the design and user experience of this digital art gallery platform. On the technical side of things I've learned a lot. Among many other things, how to build operational infrastructure and coding scripts that run daily to sync our database with blockchain metadata.</p>
+        <p>One new and exciting experience for me was helping come up with the design and user experience of this digital art gallery platform. On the technical side of things I've learned a lot. Among many other things, how to build operational infrastructure, coding scripts that run daily to sync our database with blockchain metadata and optimizing Solana blockchain transactions.</p>
         <br />
         <p>The biggest feature of Collector is the ability to display any and all of your art collected on a blockchain in customizable pages.</p>
         <p>In order to get such a large number of high-quality images displayed on one page I had to implement a multi tiered system of cached images with a CDN and backups from blockchain metadata. I combined this with a nuanced lazy loading system to make sure that both the DOM/Display and download bandwidth were balanced and optimized for a smooth viewing experience.</p>
